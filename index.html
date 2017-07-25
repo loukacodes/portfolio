@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Tran</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <header class="fixed">
+      <nav class='navigation-bar nav-bg transition'>
+        <a href="#intro"><img src="Icons/logo.svg" id="logo-img" alt="logo-img"></a>
+        <a aria-label="mobile menu" id="burger-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="overlay">
+            <nav class="overlayMenu">
+                <ul role="menu">
+                    <li><a href="#portfolio" role="menuitem">Portfolio</a></li>
+                    <li><a href="#skills" role="menuitem">Skills</a></li>
+                    <li><a href="#contact" role="menuitem">Contact</a></li>
+                </ul>
+            </nav>
+      </nav>
+    </header>
+
+
+    <section id="intro">
+      <h1 class="section-title">Hello
+        <div class="highlight"></div>
+      </h1>
+
+      <p>My name is Trang Tran</p>
+      <p>I'm a <strong>Front End Developer</strong></p>
+      <p>Current career capital is in building process.</p>
+    </section>
+
+    <section id="portfolio">
+      <h1 class="section-title">Portfolio
+        <div class="highlight"></div>
+      </h1>
+
+          <section id="project-intro">
+            <figure>
+              <img src="Icons/screen.svg" class="screen" alt="screen">
+            </figure>
+          </section>
+
+          <section id="project-weather">
+            <figure>
+              <img src="Icons/screen-weather.png" class="screen" alt="screen">
+            </figure>
+            <figcaption>
+              Get user's location and show its current weather<br>
+              Powered by DarkSky API<br>
+              <a href="https://trangtmtran.github.io/weather-app/">View Site</a>
+            </figcaption>
+          </section>
+
+          <section id="project-tictactoe">
+            <figure>
+              <img src="Icons/screen-tictactoe.png" class="screen" alt="screen">
+            </figure>
+            <figcaption>
+              Classic Tic Tac Toe game, user can choose whether X or O and try to beat computer<br>
+              Built with vanilla Javascript and miniMax algorithm<br>
+              <a href="https://trangtmtran.github.io/Tic-Tac-Toe/">Play It!</a>
+            </figcaption>
+          </section>
+
+        <section id="project-simon">
+          <figure>
+            <img src="Icons/screen-simon.png" class="screen" alt="screen">
+          </figure>
+          <figcaption>
+            Another classic game from the 80s.<br>
+            There are 20 levels in total, user will memorize the sequence given randomly by computer and perform them orderly<br>
+            Built with the help of jQuery<br>
+            <a href="https://trangtmtran.github.io/Simon-Game/">Play It!</a>
+          </figcaption>
+        </section>
+
+        <section id="project-random-quote">
+          <figure>
+            <img src="Icons/screen-randomQuote.png" class="screen" alt="screen">
+          </figure>
+          <figcaption>
+            Generate new quote every time user hits "new quote" button<br>
+            User can tweet the current quote using "Tweet it" button<br>
+            <a href="https://trangtmtran.github.io/Random-Quote-Machine/">View Site</a>
+          </figcaption>
+        </section>
+
+        <section id="project-calculator">
+          <figure>
+            <img src="Icons/screen-calculator.png" class="screen" alt="screen">
+          </figure>
+          <figcaption>
+            Basic calculator app<br>
+            <a href="https://trangtmtran.github.io/Javascript-Calculator/">View Site</a>
+          </figcaption>
+        </section>
+
+        <section id="project-twitch">
+          <figure>
+            <img src="Icons/screen-twitch.png" class="screen" alt="screen">
+          </figure>
+          <figcaption>
+            Twitch TV app, user can see which channels are streaming and their status or which channels are offline<br>
+            <a href="https://trangtmtran.github.io/Twitch-TV-API/">View Site</a>
+          </figcaption>
+        </section>
+
+        <section id="project-pomodoro">
+          <figure>
+            <img src="Icons/screen-pomodoro.png" class="screen" alt="screen">
+          </figure>
+          <figcaption>
+            User can use this app to control their work-flow<br>
+            They can set the length of session (traditionally is 25 mins), and break-time length<br>
+            Timer will be fired once start button has been clicked<br>
+            <a href="https://trangtmtran.github.io/Pomodoro-Clock/">View Site</a>
+          </figcaption>
+        </section>
+
+    <div>
+      <ul class="project-nav">
+        <li id="weather" class="fancy-button">Weather</li>
+        <li id="tictactoe" class="fancy-button">Tic Tac Toe</li>
+        <li id="simon" class="fancy-button">Simon Game</li>
+        <li id="random-quote" class="fancy-button">Random Quote</li>
+        <li id="calculator" class="fancy-button">Calculator</li>
+        <li id="twitch" class="fancy-button">Twitch TV</li>
+        <li id="pomodoro" class="fancy-button">Pomodoro Clock</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h1 class="section-title">Skills
+      <div class="highlight"></div>
+    </h1>
+
+    <div id="skill-set">
+      <div class="skill" data-percent="85%">
+        <span class="skill-title">HTML5</span>
+        <div class="skillbar-bar"></div>
+        <div class="skill-percentage">85%</div>
+      </div>
+      <div class="skill" data-percent="65%">
+        <span class="skill-title">CSS3</span>
+        <div class="skillbar-bar"></div>
+        <div class="skill-percentage">65%</div>
+      </div>
+      <div class="skill" data-percent="50%">
+        <span class="skill-title">Javascript</span>
+        <div class="skillbar-bar"></div>
+        <div class="skill-percentage">50%</div>
+      </div>
+      <div class="skill" data-percent="45%">
+        <span class="skill-title">jQuery</span>
+        <div class="skillbar-bar"></div>
+        <div class="skill-percentage">45%</div>
+      </div>
+      <div class="skill" data-percent="35%">
+        <span class="skill-title">GitHub</span>
+        <div class="skillbar-bar"></div>
+        <div class="skill-percentage">35%</div>
+      </div>
+      <div class="skill" data-percent="5%">
+        <span class="skill-title">Sass</span>
+        <div class="skillbar-bar"></div>
+        <div class="skill-percentage">5%</div>
+      </div>
+      <div class="skill" data-percent="1%">
+        <span class="skill-title">React</span>
+        <div class="skillbar-bar"></div>
+        <div class="skill-percentage">1%</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h1 class="section-title">Contact
+      <div class="highlight"></div>
+    </h1>
+    <p>Opps, almost forgot ;) here's a bit about me.<br> I'm a twenty-something girl who loves coding and making website/app which is not just looking good but also functional.</p>
+    <h3>Connect with me on social media</h3>
+    <ul>
+      <a href="https://www.linkedin.com/in/trang-tran0909/" target="_blank"><li><img src="Icons/linkedin.svg"><div class="highlight"></div></li></a>
+      <a href="https://github.com/trangtmtran" target="_blank"><li><img src="Icons/github.svg"><div class="highlight"></div></li></a>
+      <a href="https://codepen.io/trangtran/" target="_blank"><li><img src="Icons/codepen.svg"><div class="highlight"></div></li></a>
+      <a href="https://www.freecodecamp.com/trangtmtran" target="_blank"><li><img src="Icons/freecodecamp.svg"><div class="highlight"></div></li></a>
+      <a href="https://twitter.com/trangtmtran" target="_blank"><li><img src="Icons/twitter.png"><div class="highlight"></div></li></a>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> by Trang Tran</p>
+  </footer>
+
+    <script src="JS/jquery-3.2.1.min.js"></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
