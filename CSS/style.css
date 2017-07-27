@@ -16,7 +16,11 @@
     font-size: 1.563em; }
 
   h6 {
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  .wrapper {
+    padding-left: 5em;
+    padding-right: 5em; } }
 /*=================== GENERAL STYLE ======================*/
 body {
   font: 100%/1.6 "Lato", sans-serif;
@@ -285,12 +289,12 @@ footer {
     list-style: none;
     border-radius: 10px;
     width: 25vh;
-    background: rgba(107, 12, 34, 0.7);
+    background: rgba(107, 12, 34, 0.8);
     border-bottom: 5px solid #6b0c22;
     margin: 0.5em;
     text-align: center;
     padding: 0.5em;
-    font-size: 0.65em;
+    font-size: 0.85em;
     text-shadow: 0 -1px 1px #222;
     color: #fefefe; }
     .project-nav .fancy-button:hover {
