@@ -21,6 +21,13 @@
 	transition-property: $first, $second;
 }
 
+@mixin transform($element) {
+  -webkit-transform: $element;
+	-moz-transform: $element;
+	-o-transform: $element;
+	transform: $element;
+}
+
 //typeface
 $lato: 'Lato', sans-serif;
 $lora: 'Lora', serif;
@@ -46,6 +53,10 @@ body {
   background: linear-gradient(to top, $matte-blue 5%, $skin 95%);
   width: 100%;
   min-height: 100vh;
+}
+
+.wrapper {
+  margin: 0 0.5em;
 }
 
 section {
@@ -83,9 +94,9 @@ footer {
   to { transform: translateX(0);}
 }
 .come-in {
-  transform: translateY(100px);
-  animation: come-in 1s ease forwards;
-  &:nth-child(odd) { animation-duration: .5s; } /* So they look staggered */
+  transform: translateY(200px);
+  animation: come-in 3s ease forwards;
+  &:nth-child(odd) { animation-duration: 1.5s; } /* So they look staggered */
 }
 
 @keyframes come-in {
@@ -349,16 +360,15 @@ z-index: 333;
         border-bottom: 5px solid rgb(107, 12, 34);
         margin: 0.5em;
         text-align: center;
-        padding: 1em;
-        font-size: 0.85em;
+        padding: 0.5em;
+        font-size: 0.65em;
         text-shadow: 0 -1px 1px #222;
         color: #fefefe;
         &:hover {
           cursor: pointer;
         }
         &:active {
-          transform: translate(0px,5px);
-          -webkit-transform: translate(0px,5px);
+          @include transform(translate(0px,5px));
           border-bottom: 1px solid rgb(107, 12, 34);
         }
       }

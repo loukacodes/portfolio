@@ -3,19 +3,28 @@ $(document).ready(function() {
   //navigation bar
   $(window).scroll(function() {
     var y = $(this).scrollTop();
-
+    var $portfolioOffset = $("#portfolio").offset().top;
+    var $skillsOffset = $("#skills").offset().top;
+    var $contactOffset = $("#contact").offset().top;
     if(y > 100) {
       $(".nav-bg").addClass("nav-show");
     } else {
         $('.nav-bg').removeClass('nav-show');
      	}
-      if (y > 600) {
+      if (y > $portfolioOffset) {
         $("#portfolio section figure").addClass("slide-in");
+      } else {
+        $("#portfolio section figure").removeClass("slide-in");
       }
-      if (y > 1400) {
+      if (y > $skillsOffset) {
           $(".skill").addClass("turn-right");
           showSkill();
+        } else {
+          $(".skill").removeClass("turn-right");
         }
+      if (y > $contactOffset + 200) {
+        $("#contact ul a").addClass("come-in");
+      }
   });
 
   //burger navigation
@@ -40,7 +49,7 @@ $(document).ready(function() {
     //ie. project-weather becomes weather
     $('#'+project.slice(8)).click(function(e) {
       $("#" + project).fadeIn(); //this project will show up
-      //filter one which is not this project
+      //filter ones which are not this project
       var filtered = Projects.filter(function(proj) {
         return proj !== project;
       });

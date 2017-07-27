@@ -30,6 +30,9 @@ body {
   width: 100%;
   min-height: 100vh; }
 
+.wrapper {
+  margin: 0 0.5em; }
+
 section {
   text-align: center;
   padding-top: 10em;
@@ -61,11 +64,11 @@ footer {
   to {
     transform: translateX(0); } }
 .come-in {
-  transform: translateY(100px);
-  animation: come-in 1s ease forwards;
+  transform: translateY(200px);
+  animation: come-in 3s ease forwards;
   /* So they look staggered */ }
   .come-in:nth-child(odd) {
-    animation-duration: .5s; }
+    animation-duration: 1.5s; }
 
 @keyframes come-in {
   to {
@@ -286,15 +289,17 @@ footer {
     border-bottom: 5px solid #6b0c22;
     margin: 0.5em;
     text-align: center;
-    padding: 1em;
-    font-size: 0.85em;
+    padding: 0.5em;
+    font-size: 0.65em;
     text-shadow: 0 -1px 1px #222;
     color: #fefefe; }
     .project-nav .fancy-button:hover {
       cursor: pointer; }
     .project-nav .fancy-button:active {
-      transform: translate(0px, 5px);
       -webkit-transform: translate(0px, 5px);
+      -moz-transform: translate(0px, 5px);
+      -o-transform: translate(0px, 5px);
+      transform: translate(0px, 5px);
       border-bottom: 1px solid #6b0c22; }
 
 .screen {
