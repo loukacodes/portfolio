@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Lora|Ubuntu+Mono");
-@media only screen and (min-width: 42em) {
+@media (min-width: 42em) {
   h1 {
     font-size: 6.2em; }
 
@@ -316,7 +316,7 @@ footer {
 /*=================== END OF PORTFOLIO SECTION ======================*/
 /*=================== SKILLS SECTION ======================*/
 #skill-set {
-  width: 60%;
+  width: 80%;
   margin: auto;
   padding-top: 30px;
   height: auto;
