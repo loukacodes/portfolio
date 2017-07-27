@@ -24,6 +24,8 @@ $(document).ready(function() {
         }
       if (y > $contactOffset + 200) {
         $("#contact ul a").addClass("come-in");
+      } else {
+        $("#contact ul a").removeClass("come-in");
       }
   });
 
