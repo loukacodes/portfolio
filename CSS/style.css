@@ -19,8 +19,8 @@
     font-size: 1em; }
 
   .wrapper {
-    padding-left: 5em;
-    padding-right: 5em; } }
+    padding-left: 3em;
+    padding-right: 3em; } }
 /*=================== GENERAL STYLE ======================*/
 body {
   font: 100%/1.6 "Lato", sans-serif;
@@ -288,7 +288,7 @@ footer {
     font-family: "Lato", sans-serif;
     list-style: none;
     border-radius: 10px;
-    width: 25vh;
+    width: 20vh;
     background: rgba(107, 12, 34, 0.8);
     border-bottom: 5px solid #6b0c22;
     margin: 0.5em;
