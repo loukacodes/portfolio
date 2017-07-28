@@ -22,7 +22,7 @@ $(document).ready(function() {
         } else {
           $(".skill").removeClass("turn-right");
         }
-      if (y > $contactOffset + 200) {
+      if (y > $contactOffset) {
         $("#contact ul a").addClass("come-in");
       } else {
         $("#contact ul a").removeClass("come-in");
