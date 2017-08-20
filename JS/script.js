@@ -12,13 +12,14 @@ $(document).ready(function() {
         $('.nav-bg').removeClass('nav-show');
      	}
       if (y > $portfolioOffset) {
-        $("#portfolio section figure").addClass("slide-in");
+       // do something
       } else {
-        $("#portfolio section figure").removeClass("slide-in");
+        // do something
       }
       if (y > $skillsOffset) {
           $(".skill").addClass("turn-right");
           showSkill();
+          showPercent();
         } else {
           $(".skill").removeClass("turn-right");
         }
@@ -50,14 +51,14 @@ $(document).ready(function() {
     //using slice method
     //ie. project-weather becomes weather
     $('#'+project.slice(8)).click(function(e) {
-      $("#" + project).fadeIn(); //this project will show up
+      $("#" + project).fadeIn().addClass("slide-in"); //this project will show up
       //filter ones which are not this project
       var filtered = Projects.filter(function(proj) {
         return proj !== project;
       });
       //and hide them
       filtered.forEach(function(item) {
-          $('#' + item).hide();
+          $('#' + item).hide().removeClass("slide-in");
       })
     });
   });
@@ -65,12 +66,22 @@ $(document).ready(function() {
   //Skill set
   function showSkill() {
     $('.skill').each(function(){
-           $(this).find('.skillbar-bar').animate({
-             width:jQuery(this).attr('data-percent')
-           },2500);
-         });
+      $(this).find('.skillbar-bar').animate({
+        width:$(this).attr('data-percent')
+        },2500);    
+  })
+}
+
+  function showPercent() {
+    $('.skill-percentage').each(function() {
+      $(this).html(Math.round(($(this).prev().width() / $('.skill').width())*100) + '%');
+    })
   }
 
+  setInterval(showPercent,10);
+
+
+  //footer
   var date = new Date();
   var year = date.getFullYear();
   $("#year").html(year);

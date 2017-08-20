@@ -28,9 +28,10 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  color: #000;
+  color: #darkjungle-green;
   text-align: left;
-  background: linear-gradient(to top, #063342 5%, #f4cb89 95%);
+  background: url("../Icons/background.png") repeat-x, linear-gradient(to top, #DCE1E9 60%, #69995D);
+  background-position: bottom;
   width: 100%;
   min-height: 100vh; }
 
@@ -54,7 +55,7 @@ footer {
 .highlight {
   width: 100%;
   height: 40px;
-  background: linear-gradient(to right, #063342, #d9042b);
+  background: linear-gradient(to right, #0B5351, #CBAC88);
   position: relative;
   top: -40px;
   z-index: -1;
@@ -97,16 +98,20 @@ footer {
     animation-delay: .8s; }
 
 @keyframes turn-right {
-  to {
-    transform: translateX(35px); } }
+  0% {
+    transform: translateX(0px); }
+  50% {
+    transform: translateX(35px); }
+  100% {
+    transform: translateX(0px); } }
 /*=================== END OF GENERAL STYLE ======================*/
 /*=================== HEADER STYLE ======================*/
 .nav-bg {
-  background: rgba(244, 203, 137, 0.1); }
+  background: rgba(105, 153, 93, 0.1); }
 
 .nav-show {
-  background: rgba(244, 203, 137, 0.9);
-  box-shadow: 0 1px 2px rgba(107, 12, 34, 0.6); }
+  background: rgba(105, 153, 93, 0.9);
+  box-shadow: 0 1px 2px rgba(11, 83, 81, 0.6); }
 
 .transition {
   -webkit-transition: all 0.5s ease-in-out;
@@ -147,7 +152,7 @@ footer {
   width: 50px; }
 
 #burger-nav span {
-  background: #6b0c22;
+  background: #DCE1E9;
   display: block;
   text-align: center;
   width: 50px;
@@ -161,19 +166,19 @@ footer {
   z-index: 333; }
   #burger-nav.open span:nth-child(1) {
     transform: rotate(45deg);
-    background: #fff;
+    background: #DCE1E9;
     top: 13px; }
   #burger-nav.open span:nth-child(3) {
     transform: rotate(-45deg);
     top: -13px;
-    background: #fff; }
+    background: #DCE1E9; }
   #burger-nav.open span:nth-child(2) {
     width: 0;
     opacity: 0; }
 
 .overlay {
   position: fixed;
-  background: #063342;
+  background: #092327;
   top: 0;
   right: 0;
   width: 0%;
@@ -221,7 +226,7 @@ footer {
       width: 100%; }
       .overlayMenu ul li a {
         display: inline-block;
-        color: #fff;
+        color: #DCE1E9;
         text-decoration: none;
         font-size: 2.618rem;
         padding: 10px 40px 10px 40px;
@@ -230,7 +235,7 @@ footer {
         .overlayMenu ul li a:hover, .overlayMenu ul li a:active, .overlayMenu ul li a:focus {
           transform: translateX(-2px);
           padding-left: 80px;
-          color: #f4cb89; }
+          color: #CBAC88; }
 
 .locked {
   overflow: hidden; }
@@ -248,10 +253,15 @@ footer {
 #intro {
   font-family: "Lato", sans-serif;
   padding-top: 5em; }
-  #intro p:nth-child(3) {
-    color: #063342;
-    font-size: 1.194em;
-    text-transform: uppercase; }
+  #intro p:nth-child(2) {
+    font-size: 2em; }
+    #intro p:nth-child(2) strong {
+      color: #0B5351;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      text-align: left; }
+  #intro p:nth-child(n+2) {
+    text-align: left; }
 
 /*=================== END OF INTRO SECTION ======================*/
 /*=================== PORTFOLIO SECTION ======================*/
@@ -269,10 +279,10 @@ footer {
     margin: auto; }
   #portfolio figcaption a {
     text-decoration: none;
-    color: #ccc;
+    color: #CBAC88;
     font-size: 1.618em; }
     #portfolio figcaption a:hover {
-      background: linear-gradient(to right, #063342, #d9042b);
+      background: linear-gradient(to bottom, #0B5351, #CBAC88);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
@@ -290,15 +300,14 @@ footer {
     font-family: "Lato", sans-serif;
     list-style: none;
     border-radius: 10px;
-    width: 20vh;
-    background: rgba(107, 12, 34, 0.8);
-    border-bottom: 5px solid #6b0c22;
+    width: 30vh;
+    background: linear-gradient(335deg, #0B5351, #CBAC88);
+    border-bottom: 5px solid #0b5351;
     margin: 0.5em;
     text-align: center;
-    padding: 0.5em;
+    padding: .5em;
     font-size: 0.85em;
-    text-shadow: 0 -1px 1px #222;
-    color: #fefefe; }
+    color: #DCE1E9; }
     .project-nav .fancy-button:hover {
       cursor: pointer; }
     .project-nav .fancy-button:active {
@@ -306,7 +315,7 @@ footer {
       -moz-transform: translate(0px, 5px);
       -o-transform: translate(0px, 5px);
       transform: translate(0px, 5px);
-      border-bottom: 1px solid #6b0c22; }
+      border-bottom: 1px solid #092327; }
 
 .screen {
   width: 350px;
@@ -329,9 +338,10 @@ footer {
   display: block;
   margin: 0 auto 15px;
   width: 100%;
-  background: #f4cb89;
-  height: 30px;
-  transform: translateX(10px);
+  border-radius: 5px;
+  background: rgba(9, 35, 39, 0.7);
+  box-shadow: inset 0 0 2px rgba(9, 35, 39, 0.5);
+  height: 50px;
   -webkit-transition: 0.4s linear;
   -moz-transition: 0.4s linear;
   -o-transition: 0.4s linear;
@@ -340,39 +350,35 @@ footer {
   -moz-transition-property: width, background-color;
   -o-transition-property: width, background-color;
   transition-property: width, background-color; }
+  .skill .skill-title, .skill .skill-percentage {
+    position: absolute;
+    color: #DCE1E9;
+    font-weight: bold;
+    font-size: 0.7em; }
 
 .skill-title {
-  position: absolute;
-  float: left;
-  left: -90px;
-  width: 90px;
-  height: 100%;
-  color: #fff;
-  background: #6b0c22;
-  font-size: 0.7em; }
+  left: 8px;
+  top: 8px;
+  z-index: 99; }
 
 .skillbar-bar {
   position: absolute;
-  background: linear-gradient(to left, #d9042b, #063342);
-  height: 30px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #0B5351, #CBAC88);
+  height: 50px;
   width: 0px; }
 
 .skill-percentage {
-  position: absolute;
-  float: right;
   right: 10px;
-  top: 0;
-  font-size: 11px;
-  height: 30px;
-  line-height: 30px;
-  color: #6b0c22; }
+  top: 8px; }
 
 /*=================== END OF SKILLS SECTION ======================*/
 /*=================== CONTACT SECTION ======================*/
 #contact h3 {
   font-size: 1.618em;
   padding-top: 3em;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  margin: 0; }
 #contact ul {
   padding: 0;
   display: flex;
@@ -388,5 +394,12 @@ footer {
     cursor: pointer; }
 
 /*=================== END OF CONTACT SECTION ======================*/
+/*=================== FOOTER SECTION ======================*/
+footer a {
+  text-decoration: none;
+  color: #0B5351; }
+  footer a:hover, footer a:focus {
+    color: #69995D;
+    text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

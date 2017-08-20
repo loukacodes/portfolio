@@ -3,21 +3,21 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 750 750" style="enable-background:new 0 0 750 750;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#588C8C;}
+	.st0{fill:#DCE1E9;}
 	.st1{font-family:'ButlerStencil-Black';}
 	.st2{font-size:445.5914px;}
-	.st3{fill:#D9042B;}
+	.st3{fill:#0B5351;}
 	.st4{font-family:'MyriadPro-BoldIt';}
-	.st5{fill:none;stroke:#6B0C22;stroke-width:21;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#DCE1E9;stroke-width:25;stroke-miterlimit:10;}
 	<defs>
 		<style>
 			.st5 {
 				stroke-dasharray: 2000;
 				stroke-dashoffset: 0;
-				animation: dash 4s linear forwards;
-				-webkit-animation: dash 4s linear forwards;
-				-moz-animation: dash 4s linear forwards;
-				-o-animation: dash 4s linear forwards;
+				animation: dash 5s linear forwards infinite;
+				-webkit-animation: dash 5s linear forwards infinite;
+				-moz-animation: dash 5s linear forwards infinite;
+				-o-animation: dash 5s linear forwards infinite;
 				}
 
 				@-webkit-keyframes dash {
