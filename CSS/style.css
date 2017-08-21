@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Lora|Ubuntu+Mono");
 @media (min-width: 42em) {
-  h1 {
+  section-title {
     font-size: 6.2em; }
 
   h2 {
@@ -12,7 +12,7 @@
   h4 {
     font-size: 2em; }
 
-  h5, p {
+  h5, p, figcaption {
     font-size: 1.563em; }
 
   h6 {
@@ -28,7 +28,7 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  color: #darkjungle-green;
+  color: #092327;
   text-align: left;
   background: url("../Icons/background.png") repeat-x, linear-gradient(to top, #DCE1E9 60%, #69995D);
   background-position: bottom;
@@ -150,17 +150,16 @@ footer {
   right: 0.2em;
   cursor: pointer;
   width: 50px; }
-
-#burger-nav span {
-  background: #DCE1E9;
-  display: block;
-  text-align: center;
-  width: 50px;
-  height: 3px;
-  margin-bottom: 9.5px;
-  position: relative;
-  top: 0;
-  transition: all ease-in-out .4s; }
+  #burger-nav span {
+    background: #DCE1E9;
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 3px;
+    margin-bottom: 9.5px;
+    position: relative;
+    top: 0;
+    transition: all ease-in-out .4s; }
 
 #burger-nav.open {
   z-index: 333; }

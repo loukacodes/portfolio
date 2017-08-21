@@ -11,11 +11,11 @@ $(document).ready(function() {
     } else {
         $('.nav-bg').removeClass('nav-show');
      	}
-      if (y > $portfolioOffset) {
-       // do something
-      } else {
-        // do something
-      }
+      // if (y > $portfolioOffset) {
+      //  // do something
+      // } else {
+      //   // do something
+      // }
       if (y > $skillsOffset) {
           $(".skill").addClass("turn-right");
           showSkill();

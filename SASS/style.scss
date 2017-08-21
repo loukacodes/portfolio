@@ -49,7 +49,7 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  color: #darkjungle-green;
+  color: $darkjungle-green;
   text-align: left;
   background: url("../Icons/background.png") repeat-x, linear-gradient(to top, $gainsboro 60%, $russian-green);
   background-position: bottom;
@@ -180,19 +180,19 @@ footer {
   right: 0.2em;
   cursor: pointer;
   width: 50px;
+  span {
+    background: $gainsboro;
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 3px;
+    margin-bottom: 9.5px;
+    position: relative;
+    top: 0;
+    transition: all ease-in-out .4s;
+  }
 }
 
-#burger-nav span {
-  background: $gainsboro;
-  display: block;
-  text-align: center;
-  width: 50px;
-  height: 3px;
-  margin-bottom: 9.5px;
-  position: relative;
-  top: 0;
-  transition: all ease-in-out .4s;
-}
 
 #burger-nav.open { // burger nav button after click
 z-index: 333;
