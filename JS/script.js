@@ -42,7 +42,10 @@ $(document).ready(function() {
     $("body").toggleClass("locked");
   });
   //project button click event handler
-  var Projects = ["project-intro", "project-weather", "project-tictactoe", "project-simon", "project-calculator", "project-twitch", "project-random-quote", "project-pomodoro"];
+  var Projects = ["project-intro", "project-weather", "project-tictactoe", 
+  "project-simon", "project-calculator", "project-twitch", 
+  "project-random-quote", "project-pomodoro",
+  "project-markdown", "project-leaderboard"];
   Projects.forEach(function(project) {
     if (project !== Projects[0]) {
       $('#' + project).hide(); //dont hide project-intro
