@@ -59,7 +59,6 @@ body {
 
 .wrapper {
   margin: 0 0.5em;
-
 }
 
 section {
@@ -329,7 +328,7 @@ z-index: 333;
 
 
 /*=================== PORTFOLIO SECTION ======================*/
-#portfolio {
+#projects {
   display: inline-block;
   padding: 10em 0 0;
   text-align: center;
@@ -372,8 +371,8 @@ z-index: 333;
         list-style: none;
         border-radius: 10px;
         width: 30vh;
-        background: linear-gradient(335deg, $midnight-green, $lightfrench-beige);
-        border-bottom: 5px solid opacify($midnight-green, .5);
+        background: $midnight-green;
+        border-bottom: 5px solid rgba($darkjungle-green, .5);
         margin: 0.5em;
         text-align: center;
         padding: .5em;

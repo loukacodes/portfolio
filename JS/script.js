@@ -3,7 +3,7 @@ $(document).ready(function() {
   //navigation bar
   $(window).scroll(function() {
     var y = $(this).scrollTop();
-    var $portfolioOffset = $("#portfolio").offset().top;
+    var $portfolioOffset = $("#projects").offset().top;
     var $skillsOffset = $("#skills").offset().top;
     var $contactOffset = $("#contact").offset().top;
     if(y > 100) {

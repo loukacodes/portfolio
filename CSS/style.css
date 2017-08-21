@@ -12,7 +12,7 @@
   h4 {
     font-size: 2em; }
 
-  h5 {
+  h5, p {
     font-size: 1.563em; }
 
   h6 {
@@ -265,23 +265,23 @@ footer {
 
 /*=================== END OF INTRO SECTION ======================*/
 /*=================== PORTFOLIO SECTION ======================*/
-#portfolio {
+#projects {
   display: inline-block;
   padding: 10em 0 0;
   text-align: center;
   width: 100%;
   margin: auto; }
-  #portfolio section {
+  #projects section {
     margin-top: -10em;
     margin-bottom: 2em; }
-  #portfolio figure {
+  #projects figure {
     width: 350px;
     margin: auto; }
-  #portfolio figcaption a {
+  #projects figcaption a {
     text-decoration: none;
     color: #CBAC88;
     font-size: 1.618em; }
-    #portfolio figcaption a:hover {
+    #projects figcaption a:hover {
       background: linear-gradient(to bottom, #0B5351, #CBAC88);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
@@ -301,8 +301,8 @@ footer {
     list-style: none;
     border-radius: 10px;
     width: 30vh;
-    background: linear-gradient(335deg, #0B5351, #CBAC88);
-    border-bottom: 5px solid #0b5351;
+    background: #0B5351;
+    border-bottom: 5px solid rgba(9, 35, 39, 0.5);
     margin: 0.5em;
     text-align: center;
     padding: .5em;
