@@ -358,7 +358,7 @@ footer {
 
 .skill-title {
   left: 10px;
-  top: 10px;
+  top: 8px;
   z-index: 99; }
 
 .skillbar-bar {
@@ -370,7 +370,7 @@ footer {
 
 .skill-percentage {
   right: 10px;
-  top: 10px; }
+  top: 8px; }
 
 /*=================== END OF SKILLS SECTION ======================*/
 /*=================== CONTACT SECTION ======================*/
