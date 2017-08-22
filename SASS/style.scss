@@ -45,7 +45,7 @@ $gradient :linear-gradient(to bottom, $midnight-green, $lightfrench-beige);
 
 body {
   font: 100%/1.6 $lato;
-  font-size: 1.618em;
+  font-size: 1.194em;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -274,7 +274,7 @@ z-index: 333;
                 display: inline-block;
                 color: $gainsboro;
                 text-decoration: none;
-                font-size: 2.618em;
+                font-size: 1.618em;
                 padding: 10px 40px 10px 40px;
                 margin: 5px 0;
                 transition: .5s;
@@ -312,10 +312,9 @@ z-index: 333;
   font-family: $lato;
   padding-top: 5em;
   p:nth-child(2) {
-    font-size: 2em;
     strong {
       color: $midnight-green;
-      font-size: 1.5em; //actually its fontsize is 4em, plus the previous p
+      font-size: 3.125em; 
       text-transform: uppercase;
       text-align: left;
     }
