@@ -1,16 +1,43 @@
 @media (min-width: 42em) {
-  #intro .section-title,
+//introduction
+.introduction h1.job-title {font-size: 5.65em;}
+.introduction h1, .introduction p {padding-left: 25px;}
+div.introduction {
+  min-height: 90vh;
+  padding: 35vh 0.5em 0;
+}
+
+//make font-size bigger in large screen
+  #about .section-title,
   #projects .section-title,
   #contact .section-title,
-  #skills .section-title {font-size: 5em;}
-  h2 {font-size: 4em;}
-  h3 {font-size: 3.125em;}
-  h4 {font-size: 2em;}
-  h5,p,figcaption, .skill-title, .skill-percentage {font-size: 1.194em;}
-  h6 {font-size: 1em;}
+  #skills .section-title {
+    font-size: 5em;
+  }
+  .introduction p {
+    font-size: 2.25em;
+  }
+  h5,p,figcaption, .skill-title, .skill-percentage {
+    font-size: 1.194em;
+  }
+
+  section#project-weather.card.hoverable,
+  section#project-simon.card.hoverable,
+  section#project-tictactoe.card.hoverable,
+  section#project-calculator.card.hoverable,
+  section#project-pomodoro.card.hoverable,
+  section#project-leaderboard.card.hoverable {
+    width: 37vh;
+  }
 
   .wrapper {
     padding-left: 15%;
     padding-right: 15%;
   }
+
+  div.highlight {
+    top: -60px;
+    height: 60px;
+  }
+
 }

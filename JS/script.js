@@ -23,7 +23,7 @@ $(document).ready(function() {
         } else {
           $(".skill").removeClass("turn-right");
         }
-      if (y > $contactOffset) {
+      if (y > $contactOffset - 200) {
         $("#contact ul a").addClass("come-in");
       } else {
         $("#contact ul a").removeClass("come-in");
@@ -31,40 +31,40 @@ $(document).ready(function() {
   });
 
   //burger navigation
-  $("#burger-nav").click(function() {
-    $(this).toggleClass("open");
-    $(".overlay").toggleClass("drop");
-    $("body").toggleClass("locked");
-  });
-  $(" .overlayMenu ul li").click(function() {
-    $("#burger-nav").toggleClass("open");
-    $(".overlay").toggleClass("drop");
-    $("body").toggleClass("locked");
-  });
+  // $("#burger-nav").click(function() {
+  //   $(this).toggleClass("open");
+  //   $(".overlay").toggleClass("drop");
+  //   $("body").toggleClass("locked");
+  // });
+  // $(" .overlayMenu ul li").click(function() {
+  //   $("#burger-nav").toggleClass("open");
+  //   $(".overlay").toggleClass("drop");
+  //   $("body").toggleClass("locked");
+  // });
   //project button click event handler
-  var Projects = ["project-intro", "project-weather", "project-tictactoe", 
-  "project-simon", "project-calculator", "project-twitch", 
-  "project-random-quote", "project-pomodoro",
-  "project-markdown", "project-leaderboard"];
-  Projects.forEach(function(project) {
-    if (project !== Projects[0]) {
-      $('#' + project).hide(); //dont hide project-intro
-    }
-    //project names return id of that project's button
-    //using slice method
-    //ie. project-weather becomes weather
-    $('#'+project.slice(8)).click(function(e) {
-      $("#" + project).fadeIn().addClass("slide-in"); //this project will show up
-      //filter ones which are not this project
-      var filtered = Projects.filter(function(proj) {
-        return proj !== project;
-      });
-      //and hide them
-      filtered.forEach(function(item) {
-          $('#' + item).hide().removeClass("slide-in");
-      })
-    });
-  });
+  // var Projects = ["project-intro", "project-weather", "project-tictactoe", 
+  // "project-simon", "project-calculator", "project-twitch", 
+  // "project-random-quote", "project-pomodoro",
+  // "project-markdown", "project-leaderboard"];
+  // Projects.forEach(function(project) {
+  //   if (project !== Projects[0]) {
+  //     $('#' + project).hide(); //dont hide project-intro
+  //   }
+  //   //project names return id of that project's button
+  //   //using slice method
+  //   //ie. project-weather becomes weather
+  //   $('#'+project.slice(8)).click(function(e) {
+  //     $("#" + project).fadeIn().addClass("slide-in"); //this project will show up
+  //     //filter ones which are not this project
+  //     var filtered = Projects.filter(function(proj) {
+  //       return proj !== project;
+  //     });
+  //     //and hide them
+  //     filtered.forEach(function(item) {
+  //         $('#' + item).hide().removeClass("slide-in");
+  //     })
+  //   });
+  // });
 
   //Skill set
   function showSkill() {

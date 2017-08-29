@@ -3,171 +3,242 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Tran's portfolio in beta</title>
+      <title>Trang Tran's portfolio in beta</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="CSS/style.css">
   </head>
   <body>
     <header class="fixed">
       <nav class='navigation-bar nav-bg transition'>
-        <a href="#intro"><img src="Icons/logo.svg" id="logo-img" alt="logo-img"></a>
-        <a aria-label="mobile menu" id="burger-nav">
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
-        <div class="overlay">
-            <nav class="overlayMenu">
-                <ul role="menu">
-                    <li><a href="#projects" role="menuitem">Projects</a></li>
-                    <li><a href="#skills" role="menuitem">Skills</a></li>
-                    <li><a href="#contact" role="menuitem">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <a href="index.html"><img src="Images/logo.png" id="logo-img" alt="logo-img"></a>
+          <ul role="menu">
+            <li><a href="#projects" role="menuitem">Projects</a></li>
+            <li><a href="#skills" role="menuitem">Skills</a></li>
+            <li><a href="#about" role="menuitem">About</a></li>
+            <li><a href="#contact" role="menuitem">Contact</a></li>
+          </ul>
       </nav>
     </header>
 
-    <div class="wrapper">
-      <section id="intro">
-        <h1 class="section-title">Hello
-          <div class="highlight"></div>
-        </h1>
 
-        <p>I'm a <strong>FrontEnd Developer</strong></p>
-        <p>The name is Trang Tran</p>
-        <p>I like { <i>building attractive/functional website and web application, drinking good coffee and finding rhythms for the next poem. </i>} </p>
-        <p>Current career capital is in building process. And you are seeing this portfolio in <i>beta.</i></p>
-      </section>
+    <div class="introduction">
+      <p>Hello! I am a...</p>
+      <h1 class="job-title">Front-end Developer</h1>
+    </div>
+  
+  <div class="wrapper">
+    <section id="projects" class="main-section">
+      <h1 class="section-title">Projects
+        <div class="highlight"></div>
+      </h1>
+      <div class="project-container">
+        <section id="project-weather" class="card hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="Images/screen-weather.png">
+          </div>
+          <div class="card-content">
+            <div class="stack-icon">
+              <span class='html'>HTML5</span>
+              <span class='css'>CSS3</span>
+              <span class='jquery'>jQuery</span>
+            </div>
+            <span class="card-title activator grey-text text-darken-4">Weather App<i class="material-icons right">more_vert</i></span>
+            <p>
+              <a href="https://trangtmtran.github.io/weather-app/" target="_blank" class="live">Live Demo</a>
+              <a href="https://github.com/trangtmtran/weather-app" target="_blank" class="github">Github</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Weather App<i class="material-icons right">close</i></span>
+            <p>Get user's location and show its current weather.<br>
+               Users can toggle between Fahrenheit and Celcius degree, whichever they prefer.<br>
+               Powered by DarkSky API.<br>
+            </p>
+          </div>
+        </section>
+     
 
-      <section id="projects">
-        <h1 class="section-title">Projects
-          <div class="highlight"></div>
-        </h1>
+        <section id="project-tictactoe" class="card hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="Images/screen-tictactoe.png">
+          </div>
+          <div class="card-content">
+            <div class="stack-icon">
+              <span class='html'>HTML5</span>
+              <span class='css'>CSS3</span>
+              <span class='js'>JS</span>
+            </div>
+            <span class="card-title activator grey-text text-darken-4">Tic Tac Toe<i class="material-icons right">more_vert</i></span>
+            <p>
+              <a href="https://trangtmtran.github.io/Tic-Tac-Toe/" target="_blank" class="live">Live Demo</a>
+              <a href="https://github.com/trangtmtran/Tic-Tac-Toe" target="_blank" class="github">Github</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Tic Tac Toe<i class="material-icons right">close</i></span>
+            <p> Classic Tic Tac Toe game, user can choose whether X or O and try to beat computer A.I. <br>
+              Built with vanilla Javascript and miniMax algorithm<br><br></p>
+          </div>
+        </section>
+       
+       <section id="project-simon" class="card hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="Images/screen-simon.png">
+          </div>
+          <div class="card-content">
+            <div class="stack-icon">
+              <span class='html'>HTML5</span>
+              <span class='css'>CSS3</span>
+              <span class='js'>JS</span>
+            </div>
+            <span class="card-title activator grey-text text-darken-4">Simon Game<i class="material-icons right">more_vert</i></span>
+            <p>
+              <a href="https://trangtmtran.github.io/Simon-Game/" target="_blank" class="live">Live Demo</a>
+              <a href="https://github.com/trangtmtran/Simon-Game" target="_blank" class="github">Github</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Simon Game<i class="material-icons right">close</i></span>
+            <p> Another classic game from the 80s.<br>
+            There are 20 levels in total, user should memorize the sequence given randomly by computer and perform them orderly<br>
+            Built with the help of jQuery<br></p>
+          </div>
+        </section>
 
-            <section id="project-intro">
-              <figure>
-                <img src="Icons/screen.svg" class="screen" alt="screen">
-              </figure>
-            </section>
+        <!-- <section id="project-random-quote" class="card sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="Images/screen-randomQuote.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Random Quote Machine<i class="material-icons right">more_vert</i></span>
+            <p>
+              <a href="https://trangtmtran.github.io/Random-Quote-Machine/" target="_blank">Live Demo</a>
+              <a href="https://trangtmtran.github.io/Random-Quote-Machine/" target="_blank">Github</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Simon Game<i class="material-icons right">close</i></span>
+            <p> Generate new quote every time user hits "new quote" button<br>
+            User can tweet the current quote using "Tweet it" button<br></p>
+          </div>
+        </section> -->
 
-            <section id="project-weather">
-              <figure>
-                <img src="Icons/screen-weather.png" class="screen" alt="screen">
-              </figure>
-              <figcaption>
-                Get user's location and show its current weather<br>
-                Powered by DarkSky API<br>
-                <a href="https://trangtmtran.github.io/weather-app/" target="_blank">View Live Demo</a>
-              </figcaption>
-            </section>
+        <section id="project-calculator" class="card hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="Images/screen-calculator.png">
+          </div>
+          <div class="card-content">
+            <div class="stack-icon">
+              <span class='html'>HTML5</span>
+              <span class='css'>CSS3</span>
+              <span class='jquery'>jQuery</span>
+            </div>
+            <span class="card-title activator grey-text text-darken-4">Calculator<i class="material-icons right">more_vert</i></span>
+            <p>
+              <a href="https://trangtmtran.github.io/Javascript-Calculator/" target="_blank" class="live">Live Demo</a>
+              <a href="https://github.com/trangtmtran/Javascript-Calculator" target="_blank" class="github">Github</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Calculator<i class="material-icons right">close</i></span>
+            <p>Basic calculator</p>
+          </div>
+        </section>
 
-            <section id="project-tictactoe">
-              <figure>
-                <img src="Icons/screen-tictactoe.png" class="screen" alt="screen">
-              </figure>
-              <figcaption>
-                Classic Tic Tac Toe game, user can choose whether X or O and try to beat computer A.I. <br>
-                Built with vanilla Javascript and miniMax algorithm<br>
-                <a href="https://trangtmtran.github.io/Tic-Tac-Toe/" target="_blank">Play It!</a>
-              </figcaption>
-            </section>
+       <!--  <section id="project-twitch" class="card sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="Images/screen-twitch.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Twitch TV<i class="material-icons right">more_vert</i></span>
+            <p>
+              <a href="https://trangtmtran.github.io/Twitch-TV-API/" target="_blank">Live Demo</a>
+              <a href="https://trangtmtran.github.io/Random-Quote-Machine/" target="_blank">Github</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Twitch TV<i class="material-icons right">close</i></span>
+            <p>Twitch TV app, user can see which channels are streaming and their status or which channels are offline<br>
+            Built with the help of Twitch TV API<br></p>
+          </div>
+        </section>
+ -->
+        <section id="project-pomodoro" class="card hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="Images/screen-pomodoro.png">
+          </div>
+          <div class="card-content">
+            <div class="stack-icon">
+              <span class='html'>HTML5</span>
+              <span class='css'>CSS3</span>
+              <span class='jquery'>jQuery</span>
+            </div>
+            <span class="card-title activator grey-text text-darken-4">Pomodoro Clock<i class="material-icons right">more_vert</i></span>
+            <p>
+              <a href="https://trangtmtran.github.io/Pomodoro-Clock/" target="_blank" class="live">Live Demo</a>
+              <a href="https://github.com/trangtmtran/Pomodoro-Clock" target="_blank" class="github">Github</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Pomodoro Clock<i class="material-icons right">close</i></span>
+            <p>User can use this app to control their work-flow<br>
+            They can set the length of session (traditionally 25 mins), and break-time length<br>
+            Timer will be fired once start button is clicked<br></p>
+          </div>
+        </section>
 
-          <section id="project-simon">
-            <figure>
-              <img src="Icons/screen-simon.png" class="screen" alt="screen">
-            </figure>
-            <figcaption>
-              Another classic game from the 80s.<br>
-              There are 20 levels in total, user should memorize the sequence given randomly by computer and perform them orderly<br>
-              Built with the help of jQuery<br>
-              <a href="https://trangtmtran.github.io/Simon-Game/" target="_blank">Play It!</a>
-            </figcaption>
-          </section>
+       <!--  <section id="project-markdown" class="card hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="Images/screen-markdown.png">
+          </div>
+          <div class="card-content">
+            <div class="stack-icon">
+              <span class='html'>HTML5</span>
+              <span class='css'>CSS3</span>
+              <span class='react'>Reactjs</span>
+            </div>
+            <span class="card-title activator grey-text text-darken-4">Markdown Previewer<i class="material-icons right">more_vert</i></span>
+            <p>
+              <a href="https://codepen.io/trangtran/full/mMRRMy/">Live Demo</a>
+              <a href="https://trangtmtran.github.io/Random-Quote-Machine/" target="_blank">Github</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Markdown Previewer<i class="material-icons right">close</i></span>
+            <p>User can type GitHub-flavored Markdown into a text area.<br>
+            User can instantly see the output in the right section when typing<br>
+            Built with the help of Marked library, React.js and Sass<br></p>
+          </div>
+        </section> -->
 
-          <section id="project-random-quote">
-            <figure>
-              <img src="Icons/screen-randomQuote.png" class="screen" alt="screen">
-            </figure>
-            <figcaption>
-              Generate new quote every time user hits "new quote" button<br>
-              User can tweet the current quote using "Tweet it" button<br>
-              <a href="https://trangtmtran.github.io/Random-Quote-Machine/" target="_blank">View Live Demo</a>
-            </figcaption>
-          </section>
-
-          <section id="project-calculator">
-            <figure>
-              <img src="Icons/screen-calculator.png" class="screen" alt="screen">
-            </figure>
-            <figcaption>
-              Basic calculator app<br>
-              <a href="https://trangtmtran.github.io/Javascript-Calculator/" target="_blank">View Live Demo</a>
-            </figcaption>
-          </section>
-
-          <section id="project-twitch">
-            <figure>
-              <img src="Icons/screen-twitch.png" class="screen" alt="screen">
-            </figure>
-            <figcaption>
-              Twitch TV app, user can see which channels are streaming and their status or which channels are offline<br>
-              Built with the help of Twitch TV API<br>
-              <a href="https://trangtmtran.github.io/Twitch-TV-API/" target="_blank">View Live Demo</a>
-            </figcaption>
-          </section>
-
-          <section id="project-pomodoro">
-            <figure>
-              <img src="Icons/screen-pomodoro.png" class="screen" alt="screen">
-            </figure>
-            <figcaption>
-              User can use this app to control their work-flow<br>
-              They can set the length of session (traditionally 25 mins), and break-time length<br>
-              Timer will be fired once start button is clicked<br>
-              <a href="https://trangtmtran.github.io/Pomodoro-Clock/" target="_blank">View Live Demo</a>
-            </figcaption>
-          </section>
-
-            <section id="project-markdown">
-            <figure>
-              <img src="Icons/screen-markdown.svg" class="screen" alt="screen">
-            </figure>
-            <figcaption>
-              User can type GitHub-flavored Markdown into a text area.<br>
-              User can instantly see the output in the right section when typing<br>
-              Built with the help of Marked library, React.js and Sass<br>
-              <a href="https://codepen.io/trangtran/full/mMRRMy/">View Live Demo</a>
-            </figcaption>
-          </section>
-
-            <section id="project-leaderboard">
-            <figure>
-              <img src="Icons/screen-leaderboard.svg" class="screen" alt="screen">
-            </figure>
-            <figcaption>
-              Show a table of the freeCodeCamp campers who've earned the most brownie points in the past 30 days and how many they've earned total.<br>
-              Built with React.js and Sass<br>
-              <a href="https://codepen.io/trangtran/full/ZJWWKR/" target="_blank">View Live Demo</a>
-            </figcaption>
-          </section>
-
-      <div>
-        <ul class="project-nav">
-          <li id="weather" class="fancy-button">Weather</li>
-          <li id="tictactoe" class="fancy-button">Tic Tac Toe</li>
-          <li id="simon" class="fancy-button">Simon Game</li>
-          <li id="random-quote" class="fancy-button">Random Quote</li>
-          <li id="calculator" class="fancy-button">Calculator</li>
-          <li id="twitch" class="fancy-button">Twitch TV</li>
-          <li id="pomodoro" class="fancy-button">Pomodoro Clock</li>
-          <li id="markdown" class="fancy-button">MarkDown Previewer</li>
-          <li id="leaderboard" class="fancy-button">FCC Leaderboard</li>
-        </ul>
+        <section id="project-leaderboard" class="card hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="Images/screen-leaderboard.png">
+          </div>
+          <div class="card-content">
+            <div class="stack-icon">
+              <span class='html'>HTML5</span>
+              <span class='sass'>SASS</span>
+              <span class='react'>Reactjs</span>
+            </div>
+            <span class="card-title activator grey-text text-darken-4">FreeCodeCamp Leaderboard<i class="material-icons right">more_vert</i></span>
+            <p>
+              <a href="https://trangtmtran.github.io/Freecodecamp-LeaderBoard/" target="_blank" class="live">Live Demo</a>
+              <a href="https://github.com/trangtmtran/Freecodecamp-LeaderBoard" target="_blank" class="github">Github</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">FreeCodeCamp Leaderboard<i class="material-icons right">close</i></span>
+            <p>Show a table of the freeCodeCamp campers who've earned the most brownie points in the past 30 days and how many they've earned total.<br>
+            Built with React.js and Sass<br></p>
+          </div>
+        </section>
       </div>
-    </section>
+    </section> <!-- End of Project Section-->
 
-    <section id="skills">
+    <section id="skills" class="main-section">
       <h1 class="section-title">Skills
         <div class="highlight"></div>
       </h1>
@@ -189,7 +260,7 @@
           <div class="skill-percentage">65%</div>
         </div>
         <div class="skill" data-percent="50%">
-          <span class="skill-title">Javascript</span>
+          <span class="skill-title">JavaScript</span>
           <div class="skillbar-bar"></div>
           <div class="skill-percentage">50%</div>
         </div>
@@ -215,21 +286,35 @@
         </div>
       </div>
     </section>
+    <section id="about" class="main-section">
+      <h1 class="section-title">About
+        <div class="highlight"></div>
+      </h1>
+      <p>My name is Trang Tran.</p>
+      <p>I'm a twenty-something girl who loves coding and making website/web-app which is not just looking good but also functional.</p>
+      <p>After 10 months of self-teaching, I've claimed 2 certificates in web development. Since then, coding has become my daily ritual, nothing beats the feeling of debugging successfully.<br>The furthur I go along the road, the more familiar I get when confronting new concept. <br>Therefore, it gives me confidence as well as excitement when it comes to learning new things, and I believe that studying is a life-long road that has no end.</p>
+      <p>When not coding, I like {<br>
+        <i>playing sport (jogging, ping pong, swimming)</i><br> 
+        <i>drinking good coffee</i><br>
+        <i>and finding rhythms for the next poem.</i><br>} 
+      </p>
+      <p>I'm also a final year automation engineering student and going to graduate soon.</p>
+      <a class="resume" href="TrangTran_Resume.pdf">
+        <i class="material-icons">file_download</i>Download my CV here (pdf)
+      </a>
+    </section>
 
-    <section id="contact">
+    <section id="contact" class="main-section">
       <h1 class="section-title">Contact
         <div class="highlight"></div>
       </h1>
-      <p>Here's a bit more about me.<br> I'm a twenty-something girl who loves coding and making website/web-app which is not just looking good but also functional.</p>
-      <p>After 10 months of self-teaching, I've claimed 2 certificates in web development. It was not only about the certificate itself, it was what I've learnt along the way that matters. I believe that studying is a life-long road that has no end.</p>
-      <p>I'm also a final year automation engineering student and going to graduate soon.</p>
       <h3>Connect with me</h3>
       <ul>
-        <a href="https://www.linkedin.com/in/trang-tran0909/" target="_blank"><li><img src="Icons/linkedin.svg"><div class="highlight"></div></li></a>
-        <a href="https://github.com/trangtmtran" target="_blank"><li><img src="Icons/github.svg"><div class="highlight"></div></li></a>
-        <a href="https://codepen.io/trangtran/" target="_blank"><li><img src="Icons/codepen.svg"><div class="highlight"></div></li></a>
-        <a href="https://www.freecodecamp.com/trangtmtran" target="_blank"><li><img src="Icons/freecodecamp.svg"><div class="highlight"></div></li></a>
-        <a href="https://twitter.com/trangtmtran" target="_blank"><li><img src="Icons/twitter.png"><div class="highlight"></div></li></a>
+        <a href="https://www.linkedin.com/in/trang-tran0909/" target="_blank"><li><img src="Images/linkedin.svg"><div class="highlight"></div></li></a>
+        <a href="https://github.com/trangtmtran" target="_blank"><li><img src="Images/github.svg"><div class="highlight"></div></li></a>
+        <a href="https://codepen.io/trangtran/" target="_blank"><li><img src="Images/codepen.svg"><div class="highlight"></div></li></a>
+        <a href="https://www.freecodecamp.com/trangtmtran" target="_blank"><li><img src="Images/freecodecamp.svg"><div class="highlight"></div></li></a>
+        <a href="https://twitter.com/trangtmtran" target="_blank"><li><img src="Images/twitter.png"><div class="highlight"></div></li></a>
       </ul>
     </section>
 
@@ -238,7 +323,8 @@
     </footer>
   </div>
 
-    <script src="JS/jquery-3.2.1.min.js"></script>
-    <script src="JS/script.js"></script>
+    <script type="text/javascript" src="JS/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="JS/materialize.min.js"></script>
+    <script type="text/javascript" src="JS/script.js"></script>
   </body>
 </html>
