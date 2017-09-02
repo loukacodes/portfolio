@@ -303,7 +303,6 @@ footer {
    margin: auto;
    padding-top:30px;
    height:auto;
-   overflow: none;
 }
 
 
@@ -316,7 +315,7 @@ footer {
     background: rgba($blue, .7);
     box-shadow: inset 0 0 2px rgba($text-color, .5);
     height: 1.6em;
-    @include transition(0.4s linear);
+    @include transition(0.4s linear forward);
     @include transition-property(width, background-color);
 
     .skill-title, .skill-percentage {
@@ -338,7 +337,7 @@ footer {
     border-radius: 10px;
     background: linear-gradient(to right, $sand, $turquoise);
     height: 1.6em;
-    width:0;
+    width:100%;
   }
 
   .skill-percentage {
