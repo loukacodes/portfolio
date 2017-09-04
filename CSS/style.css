@@ -342,7 +342,7 @@ footer {
   border-radius: 10px;
   background: linear-gradient(to right, #CFECB4, #12896B);
   height: 1.6em;
-  width: 100%; }
+  width: 0%; }
 
 .skill-percentage {
   right: 10px;
