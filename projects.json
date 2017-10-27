@@ -21,7 +21,7 @@
 		{
 			"id": "project-simon",
 			"img": "Images/screen-simon.png",
-			"usedSkills": ["HTML5", "CSS3", "JS", "jQuery"],
+			"usedSkills": ["HTML5", "CSS3", "jQuery"],
 			"name": "Simon game",
 			"liveDemo": "https://trangtmtran.github.io/Simon-Game/",
 			"github": "https://github.com/trangtmtran/Simon-Game",
@@ -68,7 +68,7 @@
 		{
 			"id": "project-markdown",
 			"img": "Images/screen-markdown.png",
-			"usedSkills": ["HTML5", "CSS3", "SASS", "ReactJs"],
+			"usedSkills": ["HTML5", "SASS", "ReactJs"],
 			"name": "Markdown",
 			"liveDemo": "https://codepen.io/trangtran/full/mMRRMy/",
 			"github": "https://trangtmtran.github.io/Random-Quote-Machine/",
@@ -77,7 +77,7 @@
 		{
 			"id": "project-leaderboard",
 			"img": "Images/screen-leaderboard.png",
-			"usedSkills": ["HTML5", "CSS3", "SASS", "ReactJs"],
+			"usedSkills": ["HTML5", "SASS", "ReactJs"],
 			"name": "FreeCodeCamp Leaderboard",
 			"liveDemo": "https://trangtmtran.github.io/Freecodecamp-LeaderBoard/",
 			"github": "https://github.com/trangtmtran/Freecodecamp-LeaderBoard",
