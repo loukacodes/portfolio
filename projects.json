@@ -33,7 +33,7 @@
 			"usedSkills": ["HTML5", "CSS3", "JS", "jQuery"],
 			"name": "Random Quote Machine",
 			"liveDemo": "https://trangtmtran.github.io/Random-Quote-Machine/",
-			"github": "https://trangtmtran.github.io/Random-Quote-Machine/",
+			"github": "https://github.com/trangtmtran/Random-Quote-Machine",
 			"description": "Generate new quote every time user hits \"new quote\" button. User can tweet the current quote using \"Tweet it\" button."
 		},
 		{
